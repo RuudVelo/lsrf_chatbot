@@ -16,10 +16,9 @@
 
 4. Make a `.env` file and add your OPENAI_API_KEY
 
-
 5. Ingest the docs you want to 'chat' with
 
-By default this repo a `source_documents` folder to store the documents to be ingested. You can replace the documents in there with your own.
+By default this repo a `source_documents` folder to store the documents to be ingested. Originally I used transcripts of the LRSF podcasts. For each episode I had 1 file (.txt)
 
 Supported document extensions include:
 
@@ -62,7 +61,7 @@ Note: during the ingest process no data leaves your local environment. You could
 
 6. Chat with your documents
 
-Run these scripts to ask a question and get an answer from your documents:
+There is a chat app using streamlit. The app can be launched with:
 
 First, load the command line:
 
@@ -72,13 +71,10 @@ streamlit run app2.py
 
 Note: Depending on the memory of your computer, prompt request, and number of chunks returned from the source docs, it may take anywhere from 40 to 300 seconds for the model to respond to your prompt.
 
-You can use this chatbot without internet connection.
-
-[Optional] Run the plain chatbot
-
+You can use this chatbot not without internet connection.
 
 ## Credits
 
 Credit to abacaj for the original template [here](https://github.com/abacaj/mpt-30B-inference/tree/main)
 Credit to imartinez for the privateGPT ingest logic and docs guidance [here](https://github.com/imartinez/privateGPT/blob/main/README.md?plain=1)
-Credit to TheBloke for the MPT-30B GGML model [here](https://huggingface.co/TheBloke/mpt-30B-chat-GGML)
+Credit to mayoear for private chatbot example [here](https://github.com/mayooear/private-chatbot-mpt30b-langchain)

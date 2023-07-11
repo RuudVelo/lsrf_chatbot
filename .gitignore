@@ -169,3 +169,7 @@ db/
 #source_documents/output_txt_seperate_podcasts/
 source_documents/output_txt_seperate_podcasts/*.txt
 .DS_Store
+
+#code
+download_model.py
+chat.py
