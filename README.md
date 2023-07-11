@@ -67,16 +67,8 @@ Run these scripts to ask a question and get an answer from your documents:
 First, load the command line:
 
 ```shell
-poetry run python question_answer_docs.py`
+streamlit run app2.py
 ```
-
-or
-
-`make qa`
-
-Second, wait to see the command line ask for `Enter a question:` input. Type in your question and press enter.
-
-Type `exit` to finish the script.
 
 Note: Depending on the memory of your computer, prompt request, and number of chunks returned from the source docs, it may take anywhere from 40 to 300 seconds for the model to respond to your prompt.
 
@@ -84,15 +76,6 @@ You can use this chatbot without internet connection.
 
 [Optional] Run the plain chatbot
 
-If you don't want to chat with your docs and would prefer to simply interact with the MPT-30b chatbot, you can skip the ingestion phase and simply run the chatbot script.
-
-```shell
-poetry run python chat.py`
-```
-
-or
-
-`make chat`
 
 ## Credits
 
