@@ -166,6 +166,6 @@ models/
 db/
 
 #data
-source_documents/output_txt_seperate_podcasts/
-
+#source_documents/output_txt_seperate_podcasts/
+.txt
 .DS_Store

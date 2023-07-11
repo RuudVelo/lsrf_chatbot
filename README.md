@@ -1,12 +1,4 @@
-# Chat with your documents privately without internet using MPT-30B & Langchain
-
-MPT-30B is a powerful open-source model trained with a 8k context length and outperforms the original GPT-3. [Announcement](https://www.mosaicml.com/blog/mpt-30b)
-
-Using the quantized version of MPT-30B, you can chat with your documents privately on your own computer without internet connection.
-
-## Requirements
-
-Minimum system specs with 32GB of ram and `python 3.10`.
+# Chat with LRSF podcasts
 
 ## Installation
 
@@ -22,17 +14,10 @@ Minimum system specs with 32GB of ram and `python 3.10`.
 
 `poetry install`
 
-4. Copy the `.env.example` file to `.env`
+4. Make a `.env` file and add your OPENAI_API_KEY
 
-`cp .env.example .env`
 
-5. Download the model (approx. 19GB)
-
-`python download_model.py`
-
-or visit [here](https://huggingface.co/TheBloke/mpt-30B-chat-GGML/blob/main/mpt-30b-chat.ggmlv0.q4_1.bin) and download the file. Then create a `models` folder in the root directory and place the file in there.
-
-6. Ingest the docs you want to 'chat' with
+5. Ingest the docs you want to 'chat' with
 
 By default this repo a `source_documents` folder to store the documents to be ingested. You can replace the documents in there with your own.
 
